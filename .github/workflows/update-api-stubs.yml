@@ -30,7 +30,7 @@ jobs:
       
       - name: Filter OpenAPI spec with Redocly
         run: |
-          npx @redocly/cli bundle openapi.yaml --output filtered-openapi.yaml --config comfy_api_nodes/redocly.yaml --remove-unused-components
+          npx @redocly/cli bundle openapi.yaml --output filtered-openapi.yaml --remove-unused-components
       
       - name: Generate API models
         run: |
